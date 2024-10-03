@@ -1,3 +1,8 @@
+import 'package:covidapp/abhinavsql/showpage.dart';
+import 'package:covidapp/sharepreferance.dart/CheckUserDataScreen.dart';
+import 'package:covidapp/sharepreferance.dart/UserFormfoput.dart';
+import 'package:covidapp/mapdemo.dart';
+import 'package:covidapp/page1.dart';
 import 'package:covidapp/view/SplashScreen.dart';
 import 'package:covidapp/viewModel/worldStateVM.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +10,8 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
+import 'database/local/notesappusingSQFLITE.dart';
+import 'sqflitetutorial/sqflitetutorial.dart';
 import 'viewModel/countriesViewModel.dart';
 
 void main() {
@@ -35,7 +42,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
           primarySwatch: Colors.blue,
         ),
-        home: const SplashScreen(),
+        home: ShowPage(),
       ),
     );
   }
